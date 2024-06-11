@@ -15,32 +15,32 @@ with open('sample.txt', 'r') as file:
 #2. READING FROM A FILE 
 print("--------------READING FROM A FILE----------------")
 print(file_object.read())
-file_object.close
+file_object.close()
 
 #reading the first ten characters of the file
 print("--------------reading the first ten characters of the file------------------")
 file_object = open('sample.txt', 'r')
 print(file_object.read(10))
-file_object.close
+file_object.close()
 
 #readline() returns one line
 print("---------------readline() returns one line-------------")
 file_object = open('sample.txt', 'r')
 print(file_object.readline())
-file_object.close
+file_object.close()
 
 #readlines() reads all lines into the list
 print("-------------readlines() reads all lines into the list----------")
 file_object = open('sample.txt', 'r')
 print(file_object.readlines())
-file_object.close
+file_object.close()
 
 #loop through the file line by line
 print("-------------loop through the file line by line----------")
 file_object = open('sample.txt', 'r')
 for line in file_object:
     print(line)
-file_object.close
+file_object.close()
 # 3. WRITING TO A FILE
 # writing to an existing file
 # To write to an existing file, you must add a parameter to the open() function:
@@ -52,7 +52,7 @@ print("------------using the append mode-----------")
 file_object = open("Example1.txt", "a")
 file_object.write("\nNow the file has more content!")
 print(file_object)
-file_object.close
+file_object.close()
 
 # using the write mode
 print("------------using the write mode------------")
